@@ -39,6 +39,11 @@ from langfun.core.llms.groq import Groq
 from langfun.core.llms.azure_openai import AzureOpenAI
 
 # Gemini models.
+
+from langfun.core.llms.google_genai import Gemma3_1B
+from langfun.core.llms.google_genai import Gemma3_4B
+from langfun.core.llms.google_genai import Gemma3_12B
+from langfun.core.llms.google_genai import Gemma3_27B
 from langfun.core.llms.google_genai import GenAI
 from langfun.core.llms.google_genai import Gemini25Pro
 from langfun.core.llms.google_genai import Gemini25Flash

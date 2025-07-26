@@ -151,6 +151,94 @@ SUPPORTED_MODELS = [
     #
     # Production models.
     #
+    # Gemma3 27B.
+    GeminiModelInfo(
+        model_id='gemma-3-27b-it',
+        in_service=True,
+        provider='Google GenAI',
+        model_type='instruction-tuned',
+        description='Gemma3 27B model (instruction-tuned).',
+        release_date=datetime.datetime(2025, 7, 23),
+        input_modalities=GeminiModelInfo.ALL_SUPPORTED_INPUT_TYPES,
+        context_length=lf.ModelInfo.ContextLength(
+            max_input_tokens=131_072,
+            max_output_tokens=16_384,
+        ),
+        pricing=GeminiModelInfo.Pricing(
+            cost_per_1m_input_tokens=2.0,
+            cost_per_1m_output_tokens=10.0,
+        ),
+        rate_limits=lf.ModelInfo.RateLimits(
+            max_requests_per_minute=1000,
+            max_tokens_per_minute=2_000_000,
+        ),
+    ),
+    # Gemma3 12B.
+    GeminiModelInfo(
+        model_id='gemma-3-12b-it',
+        in_service=True,
+        provider='Google GenAI',
+        model_type='instruction-tuned',
+        description='Gemma3 12B model (instruction-tuned).',
+        release_date=datetime.datetime(2025, 7, 23),
+        input_modalities=GeminiModelInfo.ALL_SUPPORTED_INPUT_TYPES,
+        context_length=lf.ModelInfo.ContextLength(
+            max_input_tokens=131_072,
+            max_output_tokens=16_384,
+        ),
+        pricing=GeminiModelInfo.Pricing(
+            cost_per_1m_input_tokens=0.5,
+            cost_per_1m_output_tokens=2.5,
+        ),
+        rate_limits=lf.ModelInfo.RateLimits(
+            max_requests_per_minute=1000,
+            max_tokens_per_minute=2_000_000,
+        ),
+    ),
+    # Gemma3 4B.
+    GeminiModelInfo(
+        model_id='gemma-3-4b-it',
+        in_service=True,
+        provider='Google GenAI',
+        model_type='instruction-tuned',
+        description='Gemma3 4B model (instruction-tuned).',
+        release_date=datetime.datetime(2025, 7, 23),
+        input_modalities=GeminiModelInfo.ALL_SUPPORTED_INPUT_TYPES,
+        context_length=lf.ModelInfo.ContextLength(
+            max_input_tokens=131_072,
+            max_output_tokens=16_384,
+        ),
+        pricing=GeminiModelInfo.Pricing(
+            cost_per_1m_input_tokens=0.1,
+            cost_per_1m_output_tokens=0.5,
+        ),
+        rate_limits=lf.ModelInfo.RateLimits(
+            max_requests_per_minute=1000,
+            max_tokens_per_minute=2_000_000,
+        ),
+    ),
+    # Gemma3 1B.
+    GeminiModelInfo(
+        model_id='gemma-3-1b-it',
+        in_service=True,
+        provider='Google GenAI',
+        model_type='instruction-tuned',
+        description='Gemma3 1B model (instruction-tuned).',
+        release_date=datetime.datetime(2025, 7, 23),
+        input_modalities=GeminiModelInfo.ALL_SUPPORTED_INPUT_TYPES,
+        context_length=lf.ModelInfo.ContextLength(
+            max_input_tokens=131_072,
+            max_output_tokens=16_384,
+        ),
+        pricing=GeminiModelInfo.Pricing(
+            cost_per_1m_input_tokens=0.05,
+            cost_per_1m_output_tokens=0.25,
+        ),
+        rate_limits=lf.ModelInfo.RateLimits(
+            max_requests_per_minute=1000,
+            max_tokens_per_minute=2_000_000,
+        ),
+    ),
     # Gemini 2.5 Flash
     GeminiModelInfo(
         model_id='gemini-2.5-flash',

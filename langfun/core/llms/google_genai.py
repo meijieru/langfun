@@ -124,6 +124,28 @@ class GeminiExp_20241206(GenAI):
 #
 # Production models.
 #
+
+# Gemma 3.
+class Gemma3_27B(GenAI):
+  """Gemma3 27B model."""
+  model = 'gemma-3-27b-it'
+
+
+class Gemma3_12B(GenAI):
+  """Gemma3 12B model."""
+  model = 'gemma-3-12b-it'
+
+
+class Gemma3_4B(GenAI):
+  """Gemma3 4B model."""
+  model = 'gemma-3-4b-it'
+
+
+class Gemma3_1B(GenAI):
+  """Gemma3 1B model."""
+  model = 'gemma-3-1b-it'
+
+
 class Gemini25ProPreview_20250605(GenAI):
   """Gemini 2.5 Pro model launched on 06/05/2025."""
   model = 'gemini-2.5-pro-preview-06-05'
